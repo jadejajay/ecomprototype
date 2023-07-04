@@ -1,0 +1,9 @@
+curl -X POST -H "Content-Type: application/json" -d "{\"sender\": \"sender_address\", \"recipient\": \"recipient_address\", \"amount\": 10}" http://localhost:5000/transactions/new
+
+curl -X GET http://localhost:5000/nodes/resolve
+
+curl -X GET http://localhost:5000/mine
+
+curl -X GET http://localhost:5000/chain
+
+curl -X POST -H "Content-Type: application/json" -d '{"nodes": ["http://node1_address", "http://node2_address"]}' http://localhost:5000/nodes/register
